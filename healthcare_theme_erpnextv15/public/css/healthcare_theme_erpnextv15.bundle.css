@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Define custom theme variables */
+:root {
+  /* Colors */
+  --car-bg: #e3f2fd;         /* Light blue card background */
+  --nav-bg: #1565c0;         /* Strong blue navbar */
+  --nav-text-color: #ffffff; /* Navbar text color */
+  --border-color: #90caf9;   /* Soft blue border */
+  --border-radius: 12px;     /* Rounded corners */
+  --link-color: #1e88e5;     /* Links and highlights */
+  --hover-bg: #1976d2;       /* Navbar hover bg */
+  --shadow-color: rgba(21, 101, 192, 0.4);
+
+  /* Fonts */
+  --font-family:  "Poppins", sans-serif;
+}
+
+/* Apply global font */
+body {
+  font-family: var(--font-family);
+  background: #f4f6fb;
+}
+
+/* Cards styling */
+.card, .frappe-control {
+  background-color: var(--car-bg);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px var(--shadow-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover, .frappe-control:hover {
+  box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+/* Navbar custom style */
+.navbar {
+  background-color: var(--nav-bg) !important;
+  color: var(--nav-text-color) !important;
+  border-bottom: 3px solid var(--link-color);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  height: 80px;
+  box-shadow: 0 3px 15px var(--shadow-color);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  padding: 0.75rem 1.5rem;
+}
+.navbar-nav  > li > button > span{
+  color: white !important;
+}
+
+/* Navbar links */
+/* .navbar a.nav-link, .navbar .dropdown-item {
+  color: var(--nav-text-color) !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+
+} */
+
+/* .navbar a.nav-link:hover, .navbar .dropdown-item:hover {
+  background-color: var(--hover-bg) !important;
+  color: #fff !important;
+} */
+/* .link-field .ui-front{
+  height: 100%;
+  width: 100%;
+} */
+
+
+.page-form .form-group {
+    padding: 0px 0px;
+}
+
+
+#navbar-breadcrumbs  a{
+  color: white;
+}
+#navbar-breadcrumbs a:before {
+
+    filter: invert(1) brightness(400%);
+}
+.number-widget-box{
+  background: #90caf9;
+}
+
+/* Sidebar menu */
+.sidebar .nav-link {
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .nav-link.active, .sidebar .nav-link:hover {
+  background-color: var(--nav-bg);
+  color: var(--nav-text-color);
+  font-weight: 700;
+  box-shadow: inset 3px 0 0 var(--link-color);
+}
+
+
+
+.page-actions .btn:not(.icon-btn), .page-actions div#driver-popover-item .driver-popover-footer button:not(.icon-btn), div#driver-popover-item .driver-popover-footer .page-actions button:not(.icon-btn) {
+    padding: 4px 14px;
+    height: 40px;
+    width: fit-content;
+}
+.btn:not(.btn-md):not(.btn-lg), div#driver-popover-item .driver-popover-footer button:not(.btn-md):not(.btn-lg) {
+    padding: 4px 14px;
+    line-height: 2.25;
+}
+[data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item:hover .setting-btn, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item:hover .duplicate-page, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item:hover .unhide-workspace-btn, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item.selected .setting-btn, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item.selected .duplicate-page, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item.selected .unhide-workspace-btn,
+[data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item:hover .drag-handle, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item.selected .drag-handle {
+    display: inline-block;
+    height: 29px;
+    width: fit-content;
+    line-height: 1;
+  background-color: var(--bg-color);
+
+  }
+  [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item:hover .setting-btn, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item:hover .duplicate-page, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item:hover .unhide-workspace-btn, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item.selected .setting-btn, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item.selected .duplicate-page, [data-page-route=Workspaces] .desk-sidebar .standard-sidebar-section.show-control .desk-sidebar-item.standard-sidebar-item.selected .unhide-workspace-btn
+  {
+  background-color: transparent;
+
+}
+
+.widget.onboarding-widget-box .widget-body .onboarding-step.active, .widget.onboarding-widget-box .widget-body .onboarding-step:hover {
+    background-color: var(--subtle-fg);
+    color: #1565c0;
+}
+[data-page-route=Workspaces] .standard-sidebar-item .item-anchor
+ {
+    display: flex;
+    overflow: hidden;
+    padding: 10px 0px 10px 8px;
+    flex: 1;
+}
+.btn.icon-btn.btn-default, div#driver-popover-item .driver-popover-footer button.icon-btn.btn-default, .btn.icon-btn.btn-secondary, div#driver-popover-item .driver-popover-footer button.icon-btn.btn-secondary, div#driver-popover-item .driver-popover-footer button.icon-btn.driver-prev-btn {
+    min-width: 28px;
+    height: 38px; 
+}
+
+.attached-file button, .frappe-control[data-fieldtype="Attach Image"] .attached-file .btn, .frappe-control[data-fieldtype="Attach Image"] .attached-file div#driver-popover-item .driver-popover-footer button, div#driver-popover-item .driver-popover-footer .frappe-control[data-fieldtype="Attach Image"] .attached-file button
+ {
+  line-height: 2.7;
+}
+
+
+.control-input input,
+.attached-file{
+  height: 40px;
+}
+.checkbox{
+  line-height: 3;
+  text-align: center;
+}
+.control-input input:focus{
+  border: 1.4px solid var(--nav-bg);
+  outline: unset;
+}
+input[type="checkbox"]{
+  height: 15px;
+  aspect-ratio: 1;
+}
+
+.page-form .form-group input:not(input[type = "checkbox"]) {
+    height: 40px;
+}
+.page-form .form-group {
+    padding: 0px 0px;
+    height: 100%;
+}
+
+.form-tabs-list .form-tabs .nav-item .nav-link {
+    color: var(--text-muted);
+    margin: 0 var(--margin-md);
+    line-height: .5em;
+    margin-block: .5em;
+    border-radius: .5em;
+    /* padding-inline: .5em; */
+    margin-inline: .25em;
+    font-size: 16px;
+    padding:.85em 1em;
+}
+
+.nav-link.active{
+background: var(--hover-bg);
+    color: white !important;
+}
+
+.std-form-layout > .form-layout > .form-page {
+    border-radius: var(--border-radius-md);
+    border: unset;
+    box-shadow: none;
+    background-color: var(--card-bg);
+}
+
+.form-tabs-list {
+    border-bottom: 1px solid var(--link-color);
+}
+
+.card, .frappe-control {
+  --shadow-color:none;
+    background-color: unset;
+    border: unset;
+    border-radius: var(--border-radius);
+    transition: box-shadow 0.3s ease;
+}
+
+.frappe-control {
+    font-size: var(--text-base);
+    font-weight: var(--weight-regular);
+    letter-spacing: 0.02em;
+}
+/* .page-form .standard-filter-section .form-group {
+    min-width: 150px;
+    height: 40px;
+    width: fit-content;
+} */
+ .page-form .standard-filter-section {
+  gap: .5em;
+  background: transparent;
+}
+ .standard-filter-section > div {
+  height: 40px;
+  margin: .25em;
+ }
+ .standard-filter-section > div input{
+  height: 100%;
+  width: 100%;
+ }
+.btn{
+      padding: 4px 14px;
+    height: 40px;
+    width: fit-content;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--nav-bg);
+  border-color: var(--link-color);
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--hover-bg);
+}
+
+/* Inputs and controls */
+input, select, textarea {
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 0.75rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--link-color);
+  outline: none;
+  box-shadow: 0 0 5px var(--link-color);
+}
